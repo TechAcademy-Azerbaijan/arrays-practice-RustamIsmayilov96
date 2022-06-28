@@ -15,13 +15,13 @@ prompt.get('input', function (err, result) {
     let orta
     let cem = 0
     let say = 0
-    for(let i = 0; i<arr.length; i++){
-        res = res +arr[i]
+    for(let i = 0; i<input_data.length; i++){
+        res = res +input_data[i]
         count++
     }orta = res/count
-    for(let i = 0; i<arr.length; i++){
-    if(arr[i]>orta){
-    cem= cem +arr[i]
+    for(let i = 0; i<input_data.length; i++){
+    if(input_data[i]>orta){
+    cem= cem +input_data[i]
     say++
     }
     }console.log(cem);
