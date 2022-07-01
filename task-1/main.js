@@ -12,7 +12,6 @@ prompt.get('input', function (err, result) {
     */
     var input = result.input; // "5,3 5 6 8 9"
     var input_data = input.split(','); // ['5', '3 5 6 8 9']
-    var massiv = input_data[1].split(','); // Daxil edilmiş massiv. Nümunə - ['3', '5', '6', '8', '9']
     let count = 0
     let res = 0
     let orta
