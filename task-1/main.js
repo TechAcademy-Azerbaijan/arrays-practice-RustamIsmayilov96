@@ -8,10 +8,11 @@ prompt.get('input', function (err, result) {
     Istifadəçinin daxil etdiyi dəyişəni qəbul edirik. 
     Giriş veriləni String type olur. Number type-a çevirmək üçün parseInt() metodundan istifadə edirik.
     Vergüllə daxil edilmiş sətri iki fərqli ədədə bölmək üçün split metodundan istifadə edirik.
-    Massivin elementlərini sətirə çevirmək üçün join() metodundan istifadə edirik.
     */
-    var input = result.input; // "5,3 5 6 8 9"
-    var input_data = input.split(','); // ['5', '3 5 6 8 9']
+    var input = result.input; // "5,2 4 7 12 9"
+    var input_data = input.split(','); // ['5', '2 4 7 12 9']
+    var n = parseInt(input_data[0]); // Massivin element sayı. Nümunə - 5
+   
     let count = 0
     let res = 0
     let orta
