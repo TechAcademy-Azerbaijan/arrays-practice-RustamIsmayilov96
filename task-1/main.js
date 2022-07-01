@@ -10,7 +10,6 @@ prompt.get('input', function (err, result) {
     */
     var input = result.input; // "5,2 4 7 12 9"
     var input_data = input.split(' '); // ['5', '2 4 7 12 9']
-    var n = parseInt(input_data[0]); // Massivin element sayı. Nümunə - 5
     var massiv = input_data[1].split(','); // Daxil edilmiş massiv. Nümunə - ['2', '4', '7', '12', '9']
     let count = 0
     let res = 0
@@ -26,7 +25,8 @@ prompt.get('input', function (err, result) {
     cem= cem +input_data[i]
     say++
     }
-    }console.log(cem);
+    }
+    console.log(cem);
     console.log(say);
     
 });
